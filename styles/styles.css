@@ -15,8 +15,22 @@
 }
 
 .containerFullWidth {
-  width: 100vw;
+  width: 100%;
   border: 2px dashed #ff5e00;
+}
+
+.btn {
+  background-color: #1b1a1a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #c8c0bb;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -351,7 +365,6 @@ template {
   display: inline-block;
   color: #1b1a1a;
   text-decoration: none;
-  cursor: pointer;
   line-height: 24px;
 }
 .navBar__link::after {
@@ -366,19 +379,6 @@ template {
 }
 .navBar__link:hover::after, .navBar__link:focus::after {
   width: 100%;
-}
-.navBar__navBtn {
-  background-color: #1b1a1a;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 14px;
-  font-size: 1.2rem;
-  transition: all 0.3s ease-in-out;
-  border: none;
-}
-.navBar__navBtn:hover {
-  cursor: pointer;
-  background-color: #c8c0bb;
 }
 
 /*баннер*/
@@ -430,12 +430,14 @@ template {
   display: block;
 }
 
-/*о нас*/
+/*про нас*/
 .about-us {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  max-width: 770px;
+  max-width: 900px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .about-us__heading {
   font-size: 2rem;
@@ -443,13 +445,231 @@ template {
   width: 30%;
   max-width: 140px;
 }
+.about-us__text p {
+  margin-bottom: 20px;
+}
 .about-us__text-and-img {
   width: 70%;
   max-width: 505px;
 }
+.about-us__partner {
+  display: flex;
+  gap: 1rem;
+}
 .about-us__partner-img {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #cec4bc;
+}
+.about-us__partner-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.about-us__partner-text h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.about-us__partner-text p {
+  color: #645c55;
+}
+
+/*хз че это REEDING HOUSE, MARBLE STAIRS, SWIRLING SAIRCASE*/
+.house {
+  background-repeat: no-repeat;
+  background-color: #e7e7e9;
+  min-height: 600px;
+  width: 100%;
+  position: relative;
+}
+.house__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: content-box;
+  margin-left: 60%;
+  margin-top: 270px;
+  max-width: 300px;
+  padding: 10px 20px;
+  border-radius: 14px;
+  background-color: rgba(82, 82, 82, 0.31);
+}
+.house__text h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 0.94rem;
+}
+.house__text p {
+  color: #f4f0ed;
+}
+.house--reeding {
+  background-image: url(/img/reeding-house/house.png), linear-gradient(#e8e8ea, #e4e3e8);
+}
+.house--marble {
+  background-image: url(/img/reeding-house/marble2.jpg), linear-gradient(#d5d7d4, #e0dedc, #d5d7d4);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+.house--stairs {
+  background-image: url(/img/reeding-house/stairs.jpg), linear-gradient(#e8e8ea, #e4e3e8);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+.house__text--right {
+  margin-left: 10%;
+}
+
+/*our process*/
+.process {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.process__text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.process__text p {
+  color: #645c55;
+  letter-spacing: 2px;
+  font-size: 0.94rem;
+}
+.process__text h1 {
+  color: #1b1a1a;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+.process__steps {
+  display: flex;
+  justify-content: space-between;
+}
+.process__step {
+  display: grid;
+  justify-items: center;
+  max-width: 350px;
+}
+.process__step h1 {
+  color: #403e3b;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.process__step p {
+  text-align: center;
+  color: #645c55;
+  min-height: 100px;
+}
+
+/*happy clients*/
+.happy-clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #403e3b;
+  padding: 100px 0;
+}
+.happy-clients .happy-clients__text {
+  max-width: 460px;
+}
+.happy-clients h3 {
+  color: #ece7e4;
+  letter-spacing: 2px;
+  font-size: 0.94rem;
+  font-weight: normal;
+  margin-bottom: -20px;
+}
+.happy-clients h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.happy-clients p {
+  color: #ece7e4;
+  font-size: 0.938rem;
+}
+.happy-clients__our-clients-logos {
+  min-width: 26rem;
+  min-height: 18rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+/*featured projects*/
+.featured-projects {
+  background-color: #f7f7f7;
+}
+.featured-projects .featured-projects__main {
+  max-width: 1200px;
+  padding: 90px 140px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+.featured-projects .featured-projects-heading {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #1b1a1a;
+}
+.featured-projects .featured-projects-p {
+  color: #645c55;
+  font-size: 1.5rem;
+  max-width: 580px;
+  margin-bottom: 40px;
+}
+.featured-projects .featured-projects-p a {
+  text-decoration: none;
+  color: #645c55;
+}
+.featured-projects__proj-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.featured-projects .proj-card {
+  position: relative;
+}
+.featured-projects .proj-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.featured-projects .proj-p {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  letter-spacing: 2px;
+  color: #645C55;
+  font-size: 0.85rem;
+}
+.featured-projects .proj-heading {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  color: #403E3B;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.featured-projects .proj-btn {
+  position: absolute;
+  left: 45px;
+  bottom: 45px;
+}
+.featured-projects__all-proj {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #1B1A1A;
+  letter-spacing: 0.4px;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
