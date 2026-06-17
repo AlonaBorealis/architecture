@@ -16,7 +16,7 @@
 
 .containerFullWidth {
   width: 100%;
-  border: 2px dashed #ff5e00;
+  border: 0.1px dashed rgba(255, 94, 0, 0);
 }
 
 .btn {
@@ -647,14 +647,14 @@ template {
   top: 30px;
   left: 30px;
   letter-spacing: 2px;
-  color: #645C55;
+  color: #645c55;
   font-size: 0.85rem;
 }
 .featured-projects .proj-heading {
   position: absolute;
   top: 40px;
   left: 30px;
-  color: #403E3B;
+  color: #403e3b;
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -667,9 +667,136 @@ template {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #1B1A1A;
+  color: #1b1a1a;
   letter-spacing: 0.4px;
   margin-top: 50px;
+}
+
+/*meet our team*/
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 100px auto;
+  /*текст*/
+}
+.team__text {
+  max-width: 375px;
+}
+.team__heading {
+  color: #403e3b;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.team__p {
+  color: #645c55;
+}
+.team__link {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  color: #1b1a1a;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+}
+.team {
+  /*карточки*/
+}
+.team__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 40px;
+  min-width: 770px;
+}
+.team__card {
+  display: flex;
+  max-width: 280px;
+}
+.team__card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+.team__img-card {
+  width: 84px;
+  height: 84px;
+}
+.team__heading-card {
+  color: #1b1a1a;
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.team__p-card {
+  color: #645c55;
+  font-size: 0.93rem;
+}
+
+/*get in touch*/
+.get-in-touch {
+  background-color: #CEC4BC;
+}
+.get-in-touch__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.get-in-touch__p-text {
+  color: #645c55;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  max-width: 575px;
+}
+.get-in-touch__heading-text {
+  color: #1b1a1a;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 0;
+}
+.get-in-touch__link {
+  position: relative;
+  top: 10px;
+  color: #1b1a1a;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+}
+
+/*footer*/
+.footer {
+  background-color: #F7F7F7;
+}
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__main-link {
+  color: #1b1a1a;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.footer__p-text {
+  color: #645c55;
+  font-size: 0.9rem;
+}
+.footer__links {
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
