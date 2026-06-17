@@ -9,13 +9,14 @@
 .container {
 	margin: 0 auto;
 	padding: 0 20px;
-	width: 100%; // ⭐ Вместо фиксированной ширины
-	max-width: 1200px; // ⭐ Ограничиваем максимум
+	width: 100%;
+	max-width: 1200px;
 }
 
 .containerFullWidth {
 	width: 100%;
-	border: 0.1px dashed rgba(255, 94, 0, 0);
+
+	overflow: hidden;
 }
 
 .btn {
