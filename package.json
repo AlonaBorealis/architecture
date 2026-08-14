@@ -1,0 +1,13 @@
+{
+  "name": "architecture",
+  "version": "1.0.0",
+  "description": "Лендинг архитектурного бюро Wishbone+Partners. Вёрстка на SCSS и сетке Bootstrap.",
+  "private": true,
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "3.8.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

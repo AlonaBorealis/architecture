@@ -178,12 +178,12 @@
 	}
 
 	&--reeding {
-		background-image: url(/img/reeding-house/house.png), linear-gradient(#e8e8ea, #e4e3e8);
+		background-image: url(../img/reeding-house/house.png), linear-gradient(#e8e8ea, #e4e3e8);
 	}
 
 	&--marble {
 		background-image:
-			url(/img/reeding-house/marble2.jpg), linear-gradient(#d5d7d4, #e0dedc, #d5d7d4);
+			url(../img/reeding-house/marble2.jpg), linear-gradient(#d5d7d4, #e0dedc, #d5d7d4);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -192,7 +192,7 @@
 
 	&--stairs {
 		background-image:
-			url(/img/reeding-house/stairs.jpg), linear-gradient(#e8e8ea, #e4e3e8);
+			url(../img/reeding-house/stairs.jpg), linear-gradient(#e8e8ea, #e4e3e8);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

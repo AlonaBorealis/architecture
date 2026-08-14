@@ -1,0 +1,9 @@
+node_modules/
+
+# IDE
+.idea/
+
+# Bootstrap лежал в репозитории, но нигде не подключён:
+# из сеточных классов используется только .container, он свой (styles/_basic.scss).
+css/
+js/
